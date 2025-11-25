@@ -1,10 +1,11 @@
+#******** zona de funcion***********
 import datetime
 
 class Saludo:
     def saludar_por_hora(self):
         hora = datetime.datetime.now().hour
 
-        # Diccionario con los rangos y mensajes
+        # los rangos y mensajes
         rangos = {
             "mañana": range(5, 12),
             "tarde": range(12, 18),
@@ -20,6 +21,6 @@ class Saludo:
         else:
             return "¡Hola! Es muy tarde o muy temprano."
 
-# Programa principal
+#******* codigo principal********
 mi_saludo = Saludo()
 print(mi_saludo.saludar_por_hora())
