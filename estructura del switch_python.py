@@ -1,14 +1,11 @@
 # Programa que muestra el nombre del mes usando match-case
-#________________________________________________________
 
 def capturar_datos():
-    """Captura el número del mes"""
     num = int(input("Digite un número del 1 al 12: "))
     return num
 
 
 def procesar_datos(numero):
-    """Procesa el número y devuelve el nombre del mes"""
     match numero:
         case 1:
             return "Enero"
@@ -39,7 +36,6 @@ def procesar_datos(numero):
 
 
 def imprimir_datos(resultado):
-    """Imprime el resultado final"""
     print("\n" + resultado)
 
 
@@ -49,4 +45,5 @@ print("=== PROGRAMA PARA MOSTRAR EL MES SEGÚN EL NÚMERO ===\n")
 numero = capturar_datos()
 resultado = procesar_datos(numero)
 imprimir_datos(resultado)
+
 
