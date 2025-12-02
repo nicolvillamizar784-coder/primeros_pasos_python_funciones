@@ -1,9 +1,9 @@
 #******** zona de funcion***********
-import datetime
+import datotiempo
 
 class Saludo:
     def saludar_por_hora(self):
-        hora = datetime.datetime.now().hour
+        hora = datotiempo.datotiempo.now().hour
 
         # los rangos y mensajes
         rangos = {
